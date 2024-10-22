@@ -50,8 +50,8 @@ public class LicitacaoScraperService {
             licitacao.setNumero(row.select("tbody > tr:nth-child(1)").text());
 
             String descricaoHtml = row.select("tbody > tr:nth-child(2)").html();
-            String descricaoLimpa = Jsoup.parse(descricaoHtml).text(); // Remove HTML e obtém texto
-            descricaoLimpa = formatarDescricao(descricaoLimpa); // Adiciona formatação, se necessário
+            String descricaoLimpa = Jsoup.parse(descricaoHtml).text();
+            descricaoLimpa = formatarDescricao(descricaoLimpa);
             licitacao.setDescricao(descricaoLimpa);
 
             String codUasg = extractValueFromHtml(descricaoHtml, "Código da UASG: ");
@@ -63,7 +63,7 @@ public class LicitacaoScraperService {
 
             licitacoes.add(licitacao);
 
-            //licitacaoRepository.save(licitacao);
+            licitacaoRepository.save(licitacao);
         }
 
         return licitacoes;
