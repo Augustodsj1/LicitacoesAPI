@@ -1,0 +1,2 @@
+# LicitacoesAPI
+Projeto api licitacoes
