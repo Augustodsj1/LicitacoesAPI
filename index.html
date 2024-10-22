@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Licitações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>API de Licitações</h1>
+
+    <div>
+        <h2>Listar Licitações</h2>
+        <button id="listar-licitacoes">Listar Licitações</button>
+        <ul id="licitacoes-list"></ul>
+    </div>
+
+    <div>
+        <h2>Marcar Licitação Como Lida</h2>
+        <input type="number" id="licitacao-id-lida" placeholder="ID da Licitação">
+        <button id="marcar-lida">Marcar Como Lida</button>
+    </div>
+
+    <div>
+        <h2>Marcar Licitação Como Não Lida</h2>
+        <input type="number" id="licitacao-id-nao-lida" placeholder="ID da Licitação">
+        <button id="marcar-nao-lida">Marcar Como Não Lida</button>
+    </div>
+
+    <div>
+        <h2>Listar Licitações Lidas</h2>
+        <button id="listar-licitacoes-lidas">Listar Licitações Lidas</button>
+        <ul id="licitacoes-lidas-list"></ul>
+    </div>
+
+    <div>
+        <h2>Listar Licitações Não Lidas</h2>
+        <button id="listar-licitacoes-nao-lidas">Listar Licitações Não Lidas</button>
+        <ul id="licitacoes-nao-lidas-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

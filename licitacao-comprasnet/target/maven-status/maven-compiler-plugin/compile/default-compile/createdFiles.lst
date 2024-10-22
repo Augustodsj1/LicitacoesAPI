@@ -1,0 +1,6 @@
+com\example\licitacao\service\LicitacaoScraperService.class
+com\example\licitacao\LicitacaoApplication.class
+com\example\licitacao\controller\LicitacaoController.class
+com\example\licitacao\model\Licitacao.class
+com\example\licitacao\repository\LicitacaoRepository.class
+com\example\licitacao\service\LicitacaoService.class
